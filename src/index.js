@@ -35,7 +35,7 @@ class USAMap extends React.Component {
 
   render() {
     return (
-      <svg className="us-state-map" xmlns="http://www.w3.org/2000/svg" width={this.props.width} height={this.props.height} viewBox="0 0 959 593">
+      <svg className="us-state-map" background-color={this.props.background} xmlns="http://www.w3.org/2000/svg" width={this.props.width} height={this.props.height} viewBox="0 0 959 593">
         <title>{this.props.title}</title>
         <g className="outlines">
           {this.buildPaths()}
@@ -51,6 +51,7 @@ class USAMap extends React.Component {
 
 USAMap.propTypes = {
   onClick: PropTypes.func.isRequired,
+  background: PropTypes.number,
   width: PropTypes.number,
   height: PropTypes.number,
   title: PropTypes.string,
