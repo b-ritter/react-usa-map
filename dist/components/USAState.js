@@ -26,7 +26,7 @@
   }
 
   var USAState = function USAState(props) {
-    return _react2.default.createElement("path", { d: props.dimensions, background: props.background, fill: props.fill, "data-name": props.state, className: props.state + " state", onClick: props.onClickState });
+    return _react2.default.createElement("path", { d: props.dimensions, fill: props.fill, "data-name": props.state, className: props.state + " state", onClick: props.onClickState });
   };
   exports.default = USAState;
 });

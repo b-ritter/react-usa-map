@@ -121,7 +121,7 @@
       value: function render() {
         return _react2.default.createElement(
           "svg",
-          { className: "us-state-map", "background-color": this.props.background, xmlns: "http://www.w3.org/2000/svg", width: this.props.width, height: this.props.height, viewBox: "0 0 959 593" },
+          { className: "us-state-map", style: "background-color: " + this.props.background, xmlns: "http://www.w3.org/2000/svg", width: this.props.width, height: this.props.height, viewBox: "0 0 959 593" },
           _react2.default.createElement(
             "title",
             null,
@@ -147,7 +147,7 @@
 
   USAMap.propTypes = {
     onClick: _propTypes2.default.func.isRequired,
-    background: _propTypes2.default.number,
+    background: _propTypes2.default.string,
     width: _propTypes2.default.number,
     height: _propTypes2.default.number,
     title: _propTypes2.default.string,
